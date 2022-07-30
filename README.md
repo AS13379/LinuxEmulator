@@ -4,4 +4,5 @@
 目前支持（模拟）的系统：
 
 [ ] CentOS/REHL系列
+
 [ ] Ubuntu/Debian系列
