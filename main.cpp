@@ -31,37 +31,32 @@ int check()
                 cout << "System CentOS Created" << endl << "id = " << cnt << endl << "user = centosuser" << endl << "passwd = centospasswd" << endl;
                 sysimg[cnt] = "centos";
                 cnt += 1;
-
+                return 0;
             }
             if(keyinlist[2] == "ubuntu" or keyinlist[2] == "UBUNTU"){
                 GetLocalTime();
                 cout << "System ubuntu Created" << endl << "id = " << cnt << endl << "user = ubuntu" << endl << "passwd = password123" << endl;
                 sysimg[cnt] = "ubuntu";
                 cnt += 1;
-
+                return 0;
             }
             if(keyinlist[2] == "debian" or keyinlist[2] == "DEBIAN"){
                 GetLocalTime();
                 cout << "System debian Created" << endl << "id = " << cnt << endl << "user = deuser" << endl << "passwd = password123d" << endl;
                 sysimg[cnt] = "debian";
                 cnt += 1;
-
+                return 0;
             }
-            else cout << "Error : This Image Is Not Support.(E.S0,img not found)" << endl;
         }
         if(keyinlist[1] == "list" or keyinlist[1] == "LIST"){
             for(int i = 0; i < 256; i++){
                 if(sysimg[i] != ""){cout << sysimg[i] << ",";}
             }
             cout << endl;
+            return 0;
         }
     }
-    else{
-        for(int i = 0; i < 5; i++){
-            cout << keyinlist[i] << " ";
-        }
-        cout << ": " << "Command Not Found" << endl;
-    }
+    return 0;
 }
 int main()
 {
@@ -74,8 +69,6 @@ int main()
         cout << "[user@bash]#";
         getline(cin, keyin);
 
-//        cout << keyin << endl;
-
         int ccnt = 0;
         for (int i = 0; i < keyin.size(); i++){
             if(keyin[i] != ' ') tmp += keyin[i];
@@ -87,10 +80,6 @@ int main()
 
         }
         keyinlist[ccnt] = tmp;
-//        for (int i = 0; i < 5; i++){
-//            cout << keyinlist[i] << " ";
-//        }
-//        cout << endl;
 
         check();
     }
