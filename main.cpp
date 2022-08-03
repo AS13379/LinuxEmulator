@@ -92,6 +92,6 @@ int main()
 //        }
 //        cout << endl;
 
-//        check();
+        check();
     }
 }
