@@ -4,9 +4,9 @@
 ## 如何使用
 ### 编译运行(以Ubuntu为例)(推荐):
 ```bash
-apt install -y g++ && apt install -y wget && wget https://github.com/AS13379/LinuxEmulator/releases/download/ver.2.alpha-1/main.cpp && g++ main.cpp -o LinuxEmulator && ./LinuxEmulator
+apt install -y g++ && apt install -y wget && wget https://github.com/AS13379/LinuxEmulator/releases/download/ver.2/main.cpp && g++ main.cpp -o LinuxEmulator && ./LinuxEmulator
 ```
 ### 直接运行:
 ```bash
-apt install -y g++ && apt install -y curl && curl https://github.com/AS13379/LinuxEmulator/releases/download/ver.2.alpha-1/LinuxEmulator -o LinuxEmulator && ./LinuxEmulator
+apt install -y g++ && apt install -y curl && curl https://github.com/AS13379/LinuxEmulator/releases/download/ver.2/LinuxEmulator -o LinuxEmulator && ./LinuxEmulator
 ```
