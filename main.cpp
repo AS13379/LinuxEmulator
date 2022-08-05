@@ -3,7 +3,7 @@
 #include <ctime>
 
 using namespace std;
-string keyin,keyinlist[5],sysimg[256],tmp,vm_sys[256];
+string keyin,keyinlist[5],sysimg[256],tmp,vm_sys[256],LocalSystem;
 int cnt = 0,sys_id[256],vm_cnt = 0;
 
 void GetLocalTime()
@@ -120,8 +120,8 @@ int check()
 int main()
 {
 //    system("title LinuxEmulator bash.vision ver.3-alpha.1"); //无法适配其他系统
-
-    cout << "welcome to LinuxEmulator bash.vision ver.3-alpha.1" << endl;
+      system("reset");
+    cout << "welcome to LinuxEmulator bash.vision ver.3-alpha.2" << endl;
     while (true)
     {
 
